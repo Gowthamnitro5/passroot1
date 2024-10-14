@@ -1,0 +1,28 @@
+.achievement-container {
+  padding: 20;
+  background-color: #ffffff;
+}
+
+.achievement-title {
+  font-size: 24;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10;
+}
+
+.achievement-date {
+  font-size: 16;
+  color: #666666;
+  margin-bottom: 20;
+}
+
+.achievement-description {
+  font-size: 18;
+  color: #333333;
+  text-align: justify;
+}
+
+.action-bar {
+  background-color: #4a90e2;
+  color: #ffffff;
+}

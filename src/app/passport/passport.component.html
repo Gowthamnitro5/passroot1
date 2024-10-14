@@ -1,0 +1,29 @@
+<ActionBar title="Developer Passport" class="action-bar">
+  <ActionItem ios.position="right" android.position="actionBar">
+    <Label text="&#xf013;" class="fas settings-icon"></Label>
+  </ActionItem>
+</ActionBar>
+
+<GridLayout rows="auto, *">
+  <StackLayout row="0" class="user-info">
+    <Label [text]="user.name" class="developer-name"></Label>
+    <Label [text]="user.email" class="developer-email"></Label>
+  </StackLayout>
+  
+  <GridLayout row="1" class="passport-book">
+    <StackLayout class="page">
+      <GridLayout rows="auto, *" class="passport-content">
+        <Label row="0" text="Developer Passport" class="passport-title"></Label>
+        <GridLayout row="1" rows="*, *, *" columns="*, *" class="stamps-container">
+          <StackLayout *ngFor="let achievement of achievements; let i = index" 
+                       [row]="getRowIndex(i)" [col]="getColIndex(i)"
+                       class="stamp" (tap)="onStampTap(achievement)">
+            <Label [text]="achievement.icon" class="stamp-icon"></Label>
+            <Label [text]="achievement.name" class="stamp-name" textWrap="true"></Label>
+            <Label [text]="achievement.date" class="stamp-date"></Label>
+          </StackLayout>
+        </GridLayout>
+      </GridLayout>
+    </StackLayout>
+  </GridLayout>
+</GridLayout>

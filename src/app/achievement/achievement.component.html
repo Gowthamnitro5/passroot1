@@ -1,0 +1,11 @@
+<ActionBar [title]="achievement.name" class="action-bar">
+  <NavigationButton text="Back" android.systemIcon="ic_menu_back"></NavigationButton>
+</ActionBar>
+
+<ScrollView>
+  <StackLayout class="achievement-container">
+    <Label [text]="achievement.name" class="achievement-title"></Label>
+    <Label [text]="'Date: ' + achievement.date" class="achievement-date"></Label>
+    <Label [text]="achievement.description" class="achievement-description" textWrap="true"></Label>
+  </StackLayout>
+</ScrollView>

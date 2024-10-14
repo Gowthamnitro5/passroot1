@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page {
+  background-color: #f0f0f0;
+}
+
+.action-bar {
+  background-color: #4a90e2;
+  color: #ffffff;
+}
+
+.btn {
+  background-color: #4a90e2;
+  color: #ffffff;
+  font-size: 18;
+  font-weight: bold;
+  padding: 10 20;
+  border-radius: 5;
+}
+
+.btn:active {
+  background-color: #3a7bc8;
+}
+
+.fas {
+  font-family: "Font Awesome 5 Free", "fa-solid-900";
+  font-weight: 900;
+}
+
+.action-item {
+  color: #ffffff;
+  font-size: 16;
+}
